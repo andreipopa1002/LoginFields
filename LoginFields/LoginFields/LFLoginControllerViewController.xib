@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LFLoginControllerViewController">
+            <connections>
+                <outlet property="emailTextField" destination="QYl-Bv-zxp" id="90M-xy-Y9T"/>
+                <outlet property="passwordTextField" destination="h72-0C-mEB" id="53L-p9-gTN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QYl-Bv-zxp">
+                    <rect key="frame" x="111" y="76" width="479" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="5Rf-Sy-J7l"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h72-0C-mEB">
+                    <rect key="frame" x="111" y="117" width="479" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="TEX-93-Ltr"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWR-KH-LIV">
+                    <rect key="frame" x="10" y="80" width="81" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBa-sa-k4Z">
+                    <rect key="frame" x="10" y="121" width="81" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKA-a6-PZL">
+                    <rect key="frame" x="281" y="167" width="38" height="30"/>
+                    <state key="normal" title="Login">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="bNW-3O-JVy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xBa-sa-k4Z" firstAttribute="leading" secondItem="AWR-KH-LIV" secondAttribute="leading" id="3x9-YB-8vd"/>
+                <constraint firstItem="AWR-KH-LIV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="78T-U0-koX"/>
+                <constraint firstItem="QYl-Bv-zxp" firstAttribute="leading" secondItem="AWR-KH-LIV" secondAttribute="trailing" constant="20" id="AVb-Jt-y4f"/>
+                <constraint firstAttribute="centerX" secondItem="sKA-a6-PZL" secondAttribute="centerX" id="BTL-4z-A4L"/>
+                <constraint firstAttribute="trailing" secondItem="QYl-Bv-zxp" secondAttribute="trailing" constant="10" id="JTf-7G-Oq5"/>
+                <constraint firstItem="sKA-a6-PZL" firstAttribute="top" secondItem="h72-0C-mEB" secondAttribute="bottom" constant="20" id="KQp-2O-nTh"/>
+                <constraint firstItem="xBa-sa-k4Z" firstAttribute="width" secondItem="AWR-KH-LIV" secondAttribute="width" id="OWj-8n-cYJ"/>
+                <constraint firstItem="h72-0C-mEB" firstAttribute="centerY" secondItem="xBa-sa-k4Z" secondAttribute="centerY" id="OcZ-gG-9aY"/>
+                <constraint firstItem="h72-0C-mEB" firstAttribute="leading" secondItem="QYl-Bv-zxp" secondAttribute="leading" id="ZJE-7V-6aY"/>
+                <constraint firstItem="h72-0C-mEB" firstAttribute="trailing" secondItem="QYl-Bv-zxp" secondAttribute="trailing" id="ZvL-o4-PPb"/>
+                <constraint firstItem="QYl-Bv-zxp" firstAttribute="centerY" secondItem="AWR-KH-LIV" secondAttribute="centerY" id="l1W-xR-yaC"/>
+                <constraint firstItem="AWR-KH-LIV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="qNb-v8-hDb"/>
+                <constraint firstItem="xBa-sa-k4Z" firstAttribute="top" secondItem="AWR-KH-LIV" secondAttribute="bottom" constant="20" id="udS-EZ-yQx"/>
+            </constraints>
+            <point key="canvasLocation" x="291" y="379"/>
+        </view>
+    </objects>
+</document>
