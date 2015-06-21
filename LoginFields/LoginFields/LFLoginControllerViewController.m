@@ -34,6 +34,21 @@
 
 # pragma mark - Internal Methods
 - (IBAction)loginButtonTapped:(id)sender {
+    NSString *errorMessage = [self errorMessage];
+    if (errorMessage.length > 0) {
+        [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil)
+                                   message:errorMessage
+                                  delegate:nil
+                         cancelButtonTitle:@"ok"
+                         otherButtonTitles:nil] show];
+    } else {
+        if (self.delegate != nil && [self.delegate respondsToSelector:@selector(userDidEnterEmail:andPassword:)]) {
+            [self.delegate userDidEnterEmail:self.emailTextField.text andPassword:self.passwordTextField.text];
+        }
+    }
+}
+
+- (NSString *)errorMessage {
     NSMutableString *errorMessage = [NSMutableString new];
     if ([self stringIsValidEmail:self.emailTextField.text] == NO) {
         [errorMessage appendString:NSLocalizedString(@"Invalid email\n", nil)];
@@ -50,18 +65,7 @@
     if ([self isStringContainingNumericalCharacters:self.passwordTextField.text] == NO) {
         [errorMessage appendString:NSLocalizedString(@"Password does not contain numbers\n", nil)];
     }
-    
-    if (errorMessage.length > 0) {
-        [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil)
-                                   message:errorMessage
-                                  delegate:nil
-                         cancelButtonTitle:@"ok"
-                         otherButtonTitles:nil] show];
-    } else {
-        if (self.delegate != nil && [self.delegate respondsToSelector:@selector(userDidEnteredEmail:andPassword:)]) {
-            [self.delegate userDidEnteredEmail:self.emailTextField.text andPassword:self.passwordTextField.text];
-        }
-    }
+    return errorMessage;
 }
 
 - (BOOL)stringIsValidEmail:(NSString *)checkString {

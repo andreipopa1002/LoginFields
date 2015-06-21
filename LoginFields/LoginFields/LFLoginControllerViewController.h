@@ -10,7 +10,7 @@
 
 @protocol LFLoginControllerDelegate <NSObject>
 
-- (void)userDidEnteredEmail:(NSString *)email andPassword:(NSString *)password;
+- (void)userDidEnterEmail:(NSString *)email andPassword:(NSString *)password;
 
 @end
 

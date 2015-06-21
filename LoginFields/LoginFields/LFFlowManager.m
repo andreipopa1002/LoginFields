@@ -8,6 +8,7 @@
 
 #import "LFFlowManager.h"
 #import "LFLoginControllerViewController.h"
+#import "LFDetailsViewController.h"
 
 @interface LFFlowManager() <LFLoginControllerDelegate>
 
@@ -28,8 +29,9 @@
 
 # pragma mark - LFLoginControllerDelegate methods
 
-- (void)userDidEnteredEmail:(NSString *)email andPassword:(NSString *)password {
-    
+- (void)userDidEnterEmail:(NSString *)email andPassword:(NSString *)password {
+    LFDetailsViewController *detailsViewController = [[LFDetailsViewController alloc] initWithEmail:email andPassword:password];
+    [self.rootController pushViewController:detailsViewController animated:YES];
 }
 
 

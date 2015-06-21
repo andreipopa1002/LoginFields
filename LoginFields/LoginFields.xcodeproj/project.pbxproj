@@ -15,6 +15,8 @@
 		C9AA37861B372B9500F9F606 /* LFFlowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AA37851B372B9500F9F606 /* LFFlowManager.m */; };
 		C9AA378C1B372CA400F9F606 /* LFLoginControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AA378A1B372CA400F9F606 /* LFLoginControllerViewController.m */; };
 		C9AA378D1B372CA400F9F606 /* LFLoginControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9AA378B1B372CA400F9F606 /* LFLoginControllerViewController.xib */; };
+		C9AA37921B37613800F9F606 /* LFDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AA37901B37613800F9F606 /* LFDetailsViewController.m */; };
+		C9AA37931B37613800F9F606 /* LFDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9AA37911B37613800F9F606 /* LFDetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		C9AA37891B372CA400F9F606 /* LFLoginControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLoginControllerViewController.h; sourceTree = "<group>"; };
 		C9AA378A1B372CA400F9F606 /* LFLoginControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLoginControllerViewController.m; sourceTree = "<group>"; };
 		C9AA378B1B372CA400F9F606 /* LFLoginControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LFLoginControllerViewController.xib; sourceTree = "<group>"; };
+		C9AA378F1B37613800F9F606 /* LFDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFDetailsViewController.h; sourceTree = "<group>"; };
+		C9AA37901B37613800F9F606 /* LFDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFDetailsViewController.m; sourceTree = "<group>"; };
+		C9AA37911B37613800F9F606 /* LFDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LFDetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +130,7 @@
 		C9AA37871B372C6A00F9F606 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C9AA378E1B37611200F9F606 /* DetailsViewController */,
 				C9AA37881B372C7800F9F606 /* LoginViewController */,
 			);
 			name = ViewControllers;
@@ -138,6 +144,16 @@
 				C9AA378B1B372CA400F9F606 /* LFLoginControllerViewController.xib */,
 			);
 			name = LoginViewController;
+			sourceTree = "<group>";
+		};
+		C9AA378E1B37611200F9F606 /* DetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C9AA378F1B37613800F9F606 /* LFDetailsViewController.h */,
+				C9AA37901B37613800F9F606 /* LFDetailsViewController.m */,
+				C9AA37911B37613800F9F606 /* LFDetailsViewController.xib */,
+			);
+			name = DetailsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +239,7 @@
 				C9AA378D1B372CA400F9F606 /* LFLoginControllerViewController.xib in Resources */,
 				C9AA376F1B3729CA00F9F606 /* LaunchScreen.xib in Resources */,
 				C9AA376C1B3729CA00F9F606 /* Images.xcassets in Resources */,
+				C9AA37931B37613800F9F606 /* LFDetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9AA37921B37613800F9F606 /* LFDetailsViewController.m in Sources */,
 				C9AA37641B3729CA00F9F606 /* AppDelegate.m in Sources */,
 				C9AA37611B3729CA00F9F606 /* main.m in Sources */,
 				C9AA378C1B372CA400F9F606 /* LFLoginControllerViewController.m in Sources */,

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LFDetailsViewController">
+            <connections>
+                <outlet property="emailLabel" destination="KYA-gF-XAp" id="rpv-3W-cgd"/>
+                <outlet property="passwordLabel" destination="GXX-bT-2KE" id="nJx-eY-I4v"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8w-G8-3mS">
+                    <rect key="frame" x="10" y="100" width="81" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiD-2p-gmr">
+                    <rect key="frame" x="10" y="131" width="81" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYA-gF-XAp">
+                    <rect key="frame" x="101" y="100" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXX-bT-2KE">
+                    <rect key="frame" x="101" y="131" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GXX-bT-2KE" firstAttribute="leading" secondItem="KYA-gF-XAp" secondAttribute="leading" id="3dR-JH-lNy"/>
+                <constraint firstItem="GXX-bT-2KE" firstAttribute="centerY" secondItem="eiD-2p-gmr" secondAttribute="centerY" id="BIL-7c-gLX"/>
+                <constraint firstItem="w8w-G8-3mS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="DMI-Hd-gNJ"/>
+                <constraint firstItem="w8w-G8-3mS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Lu6-Cc-mJ5"/>
+                <constraint firstItem="eiD-2p-gmr" firstAttribute="leading" secondItem="w8w-G8-3mS" secondAttribute="leading" id="Oe4-Ba-rZ3"/>
+                <constraint firstItem="w8w-G8-3mS" firstAttribute="centerY" secondItem="KYA-gF-XAp" secondAttribute="centerY" id="Zif-EX-8gO"/>
+                <constraint firstItem="eiD-2p-gmr" firstAttribute="top" secondItem="KYA-gF-XAp" secondAttribute="bottom" constant="10" id="hsL-TO-A6l"/>
+                <constraint firstItem="KYA-gF-XAp" firstAttribute="leading" secondItem="w8w-G8-3mS" secondAttribute="trailing" constant="10" id="kSe-qv-n4O"/>
+                <constraint firstItem="w8w-G8-3mS" firstAttribute="width" secondItem="eiD-2p-gmr" secondAttribute="width" id="rV7-Qh-9un"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
